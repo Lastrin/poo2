@@ -10,7 +10,10 @@ module org.projetinho {
     requires org.kordamp.bootstrapfx.core;
     //requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires annotations;
 
     opens org.projetinho to javafx.fxml;
     exports org.projetinho;
+    exports org.projetinho.controller;
+    opens org.projetinho.controller to javafx.fxml;
 }
